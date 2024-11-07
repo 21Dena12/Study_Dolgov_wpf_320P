@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="265d2bc6e69d4de28c19f1f2f32313e3" Name="Diagram1">
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Academiki" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Disciplina" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Employee" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Enginer" Width="1.5" PointX="7.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Exsamen" Width="1.5" PointX="9.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Fackultet" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Gimnazisti" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Jivotnie_Dolgov" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Kafedra" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Speciality" Width="1.5" PointX="5.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Strani" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Strani_Dolgov" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Student" Width="1.5" PointX="7.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Teacher" Width="1.5" PointX="7.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Tsveti_Dolgov" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Ycheniki" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Ypravlinie_Dolgov" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Zav_kaf" Width="1.5" PointX="7.5" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Zayavka" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Study_Baza_Dolgov_320PModel.Academiki_Det" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Disciplina_Kafedra" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Exsamen_Disciplina" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Zayavka_Disciplina" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Employee_Kafedra" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Enginer_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Exsamen_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Teacher_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Zav_kaf_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Exsamen_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Kafedra_Fackultet" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Speciality_Kafedra" ManuallyRouted="false" />
+        <AssociationConnector Association="Study_Baza_Dolgov_320PModel.FK_Student_Speciality" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

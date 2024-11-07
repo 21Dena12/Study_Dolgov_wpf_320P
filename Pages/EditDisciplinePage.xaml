@@ -1,0 +1,89 @@
+﻿<Page x:Class="Study_Kamalov_wpf_320P.Pages.EditDisciplinePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Редактирование дисциплины">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Редактирование дисциплины"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#423c63"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Поля ввода данных -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,20">
+            <TextBlock Text="Код:"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Margin="0,5,0,5"/>
+            <TextBox x:Name="KodBox"
+                     IsReadOnly="True"
+                     Margin="0,5,0,15"
+                     Padding="8"
+                     Background="#f5f5f5"
+                     BorderBrush="#ddd"/>
+
+            <TextBlock Text="Название:"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Margin="0,5,0,5"/>
+            <TextBox x:Name="NameBox"
+                     Margin="0,5,0,15"
+                     Padding="8"
+                     BorderBrush="#ddd"/>
+
+            <TextBlock Text="Объем:"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Margin="0,5,0,5"/>
+            <TextBox x:Name="ObemBox"
+                     Margin="0,5,0,15"
+                     Padding="8"
+                     BorderBrush="#ddd"/>
+
+            <TextBlock Text="Кафедра:"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Margin="0,5,0,5"/>
+            <ComboBox x:Name="KafedraComboBox"
+                      DisplayMemberPath="Name_kaf"
+                      SelectedValuePath="Shifr"
+                      Margin="0,5,0,15"
+                      Padding="8"
+                      BorderBrush="#ddd"/>
+        </StackPanel>
+
+        <!-- Кнопки управления -->
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="0,20,0,0">
+            <Button Content="Сохранить" 
+                    Click="SaveButton_Click"
+                    Width="120"
+                    Margin="10,0"
+                    Padding="8"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    BorderBrush="Transparent"/>
+            <Button Content="Отмена" 
+                    Click="CancelButton_Click"
+                    Width="120"
+                    Margin="10,0"
+                    Padding="8"
+                    Background="#f44336"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    BorderBrush="Transparent"/>
+        </StackPanel>
+    </Grid>
+</Page>
